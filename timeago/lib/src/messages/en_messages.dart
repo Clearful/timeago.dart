@@ -24,7 +24,7 @@ class EnMessages implements LookupMessages {
   @override
   String days(int days) => '$days days';
   @override
-  String weeks(int weeks) => '$weeks weeks';
+  String weeks(int weeks) => '$weeks ${weeks == 1 ? 'week' : 'weeks'}';
   @override
   String aboutAMonth(int days) => 'about a month';
   @override

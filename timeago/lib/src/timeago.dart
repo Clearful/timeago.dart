@@ -74,7 +74,7 @@ String format(DateTime date,
     result = messages.hours(hours.round());
   } else if (hours < 48) {
     result = messages.aDay(hours.round());
-  } else if (days < 7) {
+  } else if (hours < 168) {
     result = messages.days(days.round());
   } else if (days < 30) {
     result = messages.weeks(weeks.round());
