@@ -24,6 +24,8 @@ class TaMessages implements LookupMessages {
   @override
   String days(int days) => '$days நாட்கள்';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'ஓர் மாதம்';
   @override
   String months(int months) => '$months மாதங்கள்';

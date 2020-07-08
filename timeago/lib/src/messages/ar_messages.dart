@@ -62,6 +62,9 @@ class ArMessages implements LookupMessages {
   }
 
   @override
+  String weeks(int weeks) => '$weeks weeks';
+
+  @override
   String aboutAMonth(int days) => 'قبل حوالي شهر';
   @override
   String months(int months) {
@@ -121,6 +124,8 @@ class ArShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 ي';
   @override
   String days(int days) => '$days ي';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 ش';
   @override

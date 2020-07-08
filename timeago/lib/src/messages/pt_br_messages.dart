@@ -24,6 +24,8 @@ class PtBrMessages implements LookupMessages {
   @override
   String days(int days) => '${days} dias';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'um mês';
   @override
   String months(int months) => '${months} meses';
@@ -58,6 +60,8 @@ class PtBrShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 dia';
   @override
   String days(int days) => '${days} dias';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 mês';
   @override

@@ -12,6 +12,7 @@ class DvMessages implements LookupMessages {
   String hours(int hours) => '$hours ގަޑިއިރު';
   String aDay(int hours) => 'އެއް ދުވަސް';
   String days(int days) => '$days ދުވަސް';
+  String weeks(int weeks) => '$weeks weeks';
   String aboutAMonth(int days) => 'މަހެއް ހާ ދުވަސް';
   String months(int months) => '$months މަސް';
   String aboutAYear(int year) => 'އަހަރެއް ހާ ދުވަސް';
@@ -31,6 +32,7 @@ class DvShortMessages implements LookupMessages {
   String hours(int hours) => '$hours ގ';
   String aDay(int hours) => '~1 ދުވަސް';
   String days(int days) => '$days ދުވަސް';
+  String weeks(int weeks) => '$weeks w';
   String aboutAMonth(int days) => '~1 މަސް';
   String months(int months) => '$months މަސް';
   String aboutAYear(int year) => '~1 އަހަރު';

@@ -24,6 +24,8 @@ class ThMessages implements LookupMessages {
   @override
   String days(int days) => '$days วัน';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'ประมาณหนึ่งเดือน';
   @override
   String months(int months) => '$months เดือน';
@@ -58,6 +60,8 @@ class ThShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 ว';
   @override
   String days(int days) => '$days ว';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 ด';
   @override

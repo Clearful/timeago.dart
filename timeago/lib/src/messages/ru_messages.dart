@@ -24,6 +24,8 @@ class RuMessages implements LookupMessages {
   @override
   String days(int days) => '$days ${_convert(days, 'days')}';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'месяц';
   @override
   String months(int months) => '$months ${_convert(months, 'months')}';

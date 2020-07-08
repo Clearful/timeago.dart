@@ -24,6 +24,8 @@ class IdMessages implements LookupMessages {
   @override
   String days(int days) => '$days hari';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'sekitar sebulan';
   @override
   String months(int months) => '$months bulan';

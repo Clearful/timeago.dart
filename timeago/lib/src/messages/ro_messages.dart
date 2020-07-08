@@ -24,6 +24,8 @@ class RoMessages implements LookupMessages {
   @override
   String days(int days) => '$days zile';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'o luna';
   @override
   String months(int months) => '$months luni';
@@ -58,6 +60,8 @@ class RoShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 zi';
   @override
   String days(int days) => '$days zile';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 luni';
   @override

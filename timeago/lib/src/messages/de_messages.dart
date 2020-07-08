@@ -24,6 +24,8 @@ class DeMessages implements LookupMessages {
   @override
   String days(int days) => '$days Tagen';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '~1 Monat';
   @override
   String months(int months) => '$months Monaten';
@@ -58,6 +60,8 @@ class DeShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 Tg.';
   @override
   String days(int days) => '$days Tg.';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 Mo.';
   @override

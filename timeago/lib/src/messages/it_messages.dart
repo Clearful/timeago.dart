@@ -24,6 +24,8 @@ class ItMessages implements LookupMessages {
   @override
   String days(int days) => '${days} giorni';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'circa un mese';
   @override
   String months(int months) => '${months} mesi';
@@ -58,6 +60,8 @@ class ItShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 g';
   @override
   String days(int days) => '$days g';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 m';
   @override

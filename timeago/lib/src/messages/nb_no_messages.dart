@@ -24,6 +24,8 @@ class NbNoShortMessages implements LookupMessages {
   @override
   String days(int days) => '$days d';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '~1 mnd';
   @override
   String months(int months) => '$months mnd';
@@ -58,6 +60,8 @@ class NbNoMessages implements LookupMessages {
   String aDay(int hours) => 'en dag';
   @override
   String days(int days) => '$days dager';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => 'omtrent en måned';
   @override

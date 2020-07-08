@@ -24,6 +24,8 @@ class JaMessages implements LookupMessages {
   @override
   String days(int days) => '約${days}日';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '約1か月';
   @override
   String months(int months) => '約${months}か月';

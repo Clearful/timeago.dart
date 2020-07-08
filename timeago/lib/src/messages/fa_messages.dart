@@ -24,6 +24,8 @@ class FaMessages implements LookupMessages {
   @override
   String days(int days) => '${days} روز';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '~یک ماه';
   @override
   String months(int months) => '${months} ماه';

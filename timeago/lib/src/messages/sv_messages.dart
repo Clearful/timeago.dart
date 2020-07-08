@@ -24,6 +24,8 @@ class SvMessages implements LookupMessages {
   @override
   String days(int days) => '$days dagar';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'ungefär en månad';
   @override
   String months(int months) => '$months månader';
@@ -58,6 +60,8 @@ class SvShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 d';
   @override
   String days(int days) => '$days d';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 må';
   @override

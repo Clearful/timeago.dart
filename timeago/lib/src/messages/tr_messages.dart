@@ -24,6 +24,8 @@ class TrMessages implements LookupMessages {
   @override
   String days(int days) => '$days gün';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'bir ay';
   @override
   String months(int months) => '$months ay';

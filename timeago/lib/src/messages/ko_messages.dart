@@ -24,6 +24,8 @@ class KoMessages implements LookupMessages {
   @override
   String days(int days) => '${days}일';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '약 1달';
   @override
   String months(int months) => '${months}달';

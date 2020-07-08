@@ -24,6 +24,8 @@ class CaMessages implements LookupMessages {
   @override
   String days(int days) => '$days dies';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'un mes';
   @override
   String months(int months) => '$months mesos';
@@ -58,6 +60,8 @@ class CaShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 dia';
   @override
   String days(int days) => '$days dies';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 mes';
   @override

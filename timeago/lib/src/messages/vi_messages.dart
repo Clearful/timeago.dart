@@ -24,6 +24,8 @@ class ViMessages implements LookupMessages {
   @override
   String days(int days) => '$days ngày';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'khoảng 1 tháng';
   @override
   String months(int months) => '$months tháng';
@@ -58,6 +60,8 @@ class ViShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 ngày';
   @override
   String days(int days) => '$days ngày';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 tháng';
   @override

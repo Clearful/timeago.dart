@@ -10,6 +10,7 @@ abstract class LookupMessages {
   String hours(int hours);
   String aDay(int hours);
   String days(int days);
+  String weeks(int weeks);
   String aboutAMonth(int days);
   String months(int months);
   String aboutAYear(int year);

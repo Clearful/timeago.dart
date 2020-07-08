@@ -24,6 +24,8 @@ class ZhCnMessages implements LookupMessages {
   @override
   String days(int days) => '约 ${days} 日';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => '约1个月';
   @override
   String months(int months) => '约 ${months} 月';

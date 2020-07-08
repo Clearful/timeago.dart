@@ -24,6 +24,8 @@ class NlMessages implements LookupMessages {
   @override
   String days(int days) => '$days dagen';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'ongeveer één maand';
   @override
   String months(int months) => '$months maanden';
@@ -58,6 +60,8 @@ class NlShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 d';
   @override
   String days(int days) => '$days d';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 ma';
   @override

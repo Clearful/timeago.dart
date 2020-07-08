@@ -24,6 +24,8 @@ class KmMessages implements LookupMessages {
   @override
   String days(int days) => ' $days ថ្ងៃ';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'ប្រមាណមួយខែ';
   @override
   String months(int months) => ' $months ខែ';
@@ -58,6 +60,8 @@ class KmShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 ថ';
   @override
   String days(int days) => '$days ថ';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 ខ';
   @override

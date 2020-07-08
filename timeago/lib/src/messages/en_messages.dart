@@ -24,13 +24,15 @@ class EnMessages implements LookupMessages {
   @override
   String days(int days) => '$days days';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'about a month';
   @override
   String months(int months) => '$months months';
   @override
   String aboutAYear(int year) => 'about a year';
   @override
-  String years(int years) => '$years years';
+  String years(int years) => '$years ${years == 1 ? 'year' : 'years'}';
   @override
   String wordSeparator() => ' ';
 }
@@ -58,6 +60,8 @@ class EnShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 d';
   @override
   String days(int days) => '$days d';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 mo';
   @override
