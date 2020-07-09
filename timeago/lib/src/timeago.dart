@@ -76,7 +76,7 @@ String format(DateTime date,
     result = messages.aDay(hours.round());
   } else if (hours < 144) {
     result = messages.days(days.round());
-  } else if (days < 30) {
+  } else if (days < 21) {
     result = messages.weeks(weeks.round());
     // } else if (days < 60) {
     //   result = messages.aboutAMonth(days.round());
