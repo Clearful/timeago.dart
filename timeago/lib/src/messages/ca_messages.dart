@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// Catalan Messages
 class CaMessages implements LookupMessages {
   @override
   String prefixAgo() => 'fa';
@@ -37,6 +38,7 @@ class CaMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// Catalan short Messages
 class CaShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';

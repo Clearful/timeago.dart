@@ -2,6 +2,8 @@ import 'package:timeago/src/messages/en_messages.dart';
 import 'package:timeago/src/messages/es_messages.dart';
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+String _default = 'en';
+
 Map<String, LookupMessages> _lookupMessagesMap = {
   'en': EnMessages(),
   'en_short': EnShortMessages(),
@@ -9,20 +11,31 @@ Map<String, LookupMessages> _lookupMessagesMap = {
   'es_short': EsShortMessages(),
 };
 
+/// Sets the default [locale]. By default it is `en`.
+///
+/// Example
+/// ```
+/// setLocaleMessages('fr', FrMessages());
+/// setDefaultLocale('fr');
+/// ```
+void setDefaultLocale(String locale) {
+  assert(_lookupMessagesMap.containsKey(locale),
+      '[locale] must be a registered locale');
+  _default = locale;
+}
+
 /// Sets a [locale] with the provided [lookupMessages] to be available when
 /// using the [format] function.
 ///
 /// Example:
 /// ```dart
-/// setLocaleMessages('fr', FrMessages())
+/// setLocaleMessages('fr', FrMessages());
 /// ```
 ///
 /// If you want to define locale message implement [LookupMessages] interface
 /// with the desired messages
 ///
 void setLocaleMessages(String locale, LookupMessages lookupMessages) {
-  assert(locale != null, '[locale] must not be null');
-  assert(lookupMessages != null, '[lookupMessages] must not be null');
   _lookupMessagesMap[locale] = lookupMessages;
 }
 
@@ -35,9 +48,9 @@ void setLocaleMessages(String locale, LookupMessages lookupMessages) {
 /// - If [allowFromNow] is passed, format will use the From prefix, ie. a date
 ///   5 minutes from now in 'en' locale will display as "5 minutes from now"
 String format(DateTime date,
-    {String locale, DateTime clock, bool allowFromNow}) {
-  final _locale = locale ?? 'en';
-  final _allowFromNow = allowFromNow ?? false;
+    {String? locale, DateTime? clock, bool allowFromNow = false}) {
+  final _locale = locale ?? _default;
+  final _allowFromNow = allowFromNow;
   final messages = _lookupMessagesMap[_locale] ?? EnMessages();
   final _clock = clock ?? DateTime.now();
   var elapsed = _clock.millisecondsSinceEpoch - date.millisecondsSinceEpoch;
@@ -90,6 +103,6 @@ String format(DateTime date,
   }
 
   return [prefix, result, suffix]
-      .where((str) => str != null && str.isNotEmpty)
+      .where((str) => str.isNotEmpty)
       .join(messages.wordSeparator());
 }

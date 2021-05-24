@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// English Messages
 class EnMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
@@ -37,6 +38,7 @@ class EnMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// English short Messages
 class EnShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
@@ -49,27 +51,27 @@ class EnShortMessages implements LookupMessages {
   @override
   String lessThanOneMinute(int seconds) => 'now';
   @override
-  String aboutAMinute(int minutes) => '1 min';
+  String aboutAMinute(int minutes) => '1m';
   @override
-  String minutes(int minutes) => '$minutes min';
+  String minutes(int minutes) => '${minutes}m';
   @override
-  String aboutAnHour(int minutes) => '~1 h';
+  String aboutAnHour(int minutes) => '~1h';
   @override
-  String hours(int hours) => '$hours h';
+  String hours(int hours) => '${hours}h';
   @override
-  String aDay(int hours) => '~1 d';
+  String aDay(int hours) => '~1d';
   @override
-  String days(int days) => '$days d';
+  String days(int days) => '${days}d';
   @override
   String weeks(int weeks) => '$weeks w';
   @override
-  String aboutAMonth(int days) => '~1 mo';
+  String aboutAMonth(int days) => '~1mo';
   @override
-  String months(int months) => '$months mo';
+  String months(int months) => '${months}mo';
   @override
-  String aboutAYear(int year) => '~1 yr';
+  String aboutAYear(int year) => '~1y';
   @override
-  String years(int years) => '$years yr';
+  String years(int years) => '${years}y';
   @override
   String wordSeparator() => ' ';
 }

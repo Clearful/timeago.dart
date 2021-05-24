@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// Cambodian messages
 class KmMessages implements LookupMessages {
   @override
   String prefixAgo() => 'មុននេះ';
@@ -37,6 +38,7 @@ class KmMessages implements LookupMessages {
   String wordSeparator() => '​';
 }
 
+/// Cambodian short messages
 class KmShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';

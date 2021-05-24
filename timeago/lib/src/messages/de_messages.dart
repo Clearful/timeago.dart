@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// German Messages
 class DeMessages implements LookupMessages {
   @override
   String prefixAgo() => 'vor';
@@ -37,6 +38,7 @@ class DeMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// German short Messages
 class DeShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';

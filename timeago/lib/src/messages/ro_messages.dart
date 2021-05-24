@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// Romanian messages
 class RoMessages implements LookupMessages {
   @override
   String prefixAgo() => 'acum';
@@ -10,13 +11,13 @@ class RoMessages implements LookupMessages {
   @override
   String suffixFromNow() => '';
   @override
-  String lessThanOneMinute(int seconds) => 'un moment';
+  String lessThanOneMinute(int seconds) => 'o clipită';
   @override
   String aboutAMinute(int minutes) => 'un minut';
   @override
   String minutes(int minutes) => '$minutes minute';
   @override
-  String aboutAnHour(int minutes) => 'o ora';
+  String aboutAnHour(int minutes) => 'o oră';
   @override
   String hours(int hours) => '$hours ore';
   @override
@@ -37,6 +38,7 @@ class RoMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// Romanian short messages
 class RoShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
@@ -53,7 +55,7 @@ class RoShortMessages implements LookupMessages {
   @override
   String minutes(int minutes) => '$minutes min';
   @override
-  String aboutAnHour(int minutes) => '~1 ora';
+  String aboutAnHour(int minutes) => '~1 oră';
   @override
   String hours(int hours) => '$hours ore';
   @override

@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// Kurdish messages
 class KuMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
@@ -71,6 +72,7 @@ class KuMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// Kurdish short messages
 class KuShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
