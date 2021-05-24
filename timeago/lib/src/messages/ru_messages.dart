@@ -114,6 +114,8 @@ class RuShortMessages implements LookupMessages {
   @override
   String days(int days) => '$days д.';
   @override
+  String weeks(int weeks) => '$weeks w';
+  @override
   String aboutAMonth(int days) => '~1 мес.';
   @override
   String months(int months) => '$months мес.';

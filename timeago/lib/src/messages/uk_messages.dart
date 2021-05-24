@@ -25,6 +25,8 @@ class UkMessages implements LookupMessages {
   @override
   String days(int days) => '$days ${_convert(days, 'days')}';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'місяць';
   @override
   String months(int months) => '$months ${_convert(months, 'months')}';
@@ -111,6 +113,8 @@ class UkShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 д.';
   @override
   String days(int days) => '$days д.';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 міс.';
   @override

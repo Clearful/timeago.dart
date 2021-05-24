@@ -25,6 +25,8 @@ class HiMessages implements LookupMessages {
   @override
   String days(int days) => '$days दिन';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'तक़रीबन एक महीना';
   @override
   String months(int months) => '$months महीने';
@@ -60,6 +62,8 @@ class HiShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 दि';
   @override
   String days(int days) => '$days दि';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 म';
   @override

@@ -25,6 +25,8 @@ class GrMessages implements LookupMessages {
   @override
   String days(int days) => '$days μέρες';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'περίπου ένα μήνα';
   @override
   String months(int months) => '$months μήνες';
@@ -60,6 +62,8 @@ class GrShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 μρ';
   @override
   String days(int days) => '$days μρς';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 μν';
   @override

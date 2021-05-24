@@ -27,6 +27,8 @@ class CsMessages implements LookupMessages {
   @override
   String days(int days) => _pluralize(days, 'dnem', 'dny', 'dny');
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'měsícem';
   @override
   String months(int months) =>
@@ -63,6 +65,8 @@ class CsShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 den';
   @override
   String days(int days) => _pluralize(days, 'den', 'dny', 'dní');
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 měsíc';
   @override

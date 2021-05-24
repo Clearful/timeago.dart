@@ -25,6 +25,8 @@ class MnMessages implements LookupMessages {
   @override
   String days(int days) => '$days өдрийн';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'сар орчмын';
   @override
   String months(int months) => '$months сарын';
@@ -60,6 +62,8 @@ class MnShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 ө';
   @override
   String days(int days) => '$days ө';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 с';
   @override

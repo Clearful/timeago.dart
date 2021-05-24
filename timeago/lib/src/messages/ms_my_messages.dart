@@ -25,6 +25,8 @@ class MsMyMessages implements LookupMessages {
   @override
   String days(int days) => '$days hari';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'sebulan';
   @override
   String months(int months) => '$months bulan';
@@ -60,6 +62,8 @@ class MsMyShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 hri';
   @override
   String days(int days) => '$days hri';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 bln';
   @override

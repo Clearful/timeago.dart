@@ -25,6 +25,8 @@ class HeMessages implements LookupMessages {
   @override
   String days(int days) => '$days ימים';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'כחודש';
   @override
   String months(int months) => '$months חודשים';
@@ -60,6 +62,8 @@ class HeShortMessages implements LookupMessages {
   String aDay(int hours) => 'יום';
   @override
   String days(int days) => '$days ימים';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => 'כחודש';
   @override

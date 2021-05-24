@@ -25,6 +25,8 @@ class AzMessages implements LookupMessages {
   @override
   String days(int days) => '$days gün';
   @override
+  String weeks(int weeks) => '$weeks weeks';
+  @override
   String aboutAMonth(int days) => 'təxminən 1 ay';
   @override
   String months(int months) => '$months ay';
@@ -60,6 +62,8 @@ class AzShortMessages implements LookupMessages {
   String aDay(int hours) => '~1 g';
   @override
   String days(int days) => '$days g';
+  @override
+  String weeks(int weeks) => '$weeks w';
   @override
   String aboutAMonth(int days) => '~1 ay';
   @override
