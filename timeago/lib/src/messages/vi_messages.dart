@@ -1,5 +1,6 @@
 import 'package:timeago/src/messages/lookupmessages.dart';
 
+/// Vietnamese messages
 class ViMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
@@ -10,7 +11,7 @@ class ViMessages implements LookupMessages {
   @override
   String suffixFromNow() => 'nữa';
   @override
-  String lessThanOneMinute(int seconds) => 'một thoáng';
+  String lessThanOneMinute(int seconds) => 'một phút';
   @override
   String aboutAMinute(int minutes) => 'khoảng một phút';
   @override
@@ -37,6 +38,7 @@ class ViMessages implements LookupMessages {
   String wordSeparator() => ' ';
 }
 
+/// Vietnamese short messages
 class ViShortMessages implements LookupMessages {
   @override
   String prefixAgo() => '';
